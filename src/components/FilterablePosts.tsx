@@ -2,7 +2,7 @@
 
 import { Post } from '@/service/posts';
 import { useState } from 'react';
-import PostsGird from './PostsGird';
+import PostsGrid from './PostsGrid';
 import Categories from './Categories';
 
 type Props = {
@@ -21,7 +21,7 @@ export default function FilterablePosts({ posts, categories }: Props) {
 
   return (
     <section className='flex m-4'>
-      <PostsGird posts={filtered} />
+      <PostsGrid posts={filtered} />
       <Categories
         categories={[ALL_POSTS, ...categories]}
         selected={selected}
